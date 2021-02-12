@@ -69,7 +69,7 @@ You can view the compiled documentation in `doc/build/html/index.html`.
 ## Test
 
 ```bash
-pytest -v test/ --cov ./bo --cov-report term-missing --cov-config ./test/.coveragerc
+pytest -v test/ --cov ./hebo --cov-report term-missing --cov-config ./test/.coveragerc
 ```
 
 ## Reproduce Experimental Results
