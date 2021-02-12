@@ -19,8 +19,16 @@ with open('requirements.txt', 'r') as f:
 setuptools.setup(
         name        = 'HEBO',
         packages    = setuptools.find_packages(),
-        description = 'Heteroscedastic evolutionary bayesian optimisation',
+        description = 'Heteroscedastic Evolutionary Bayesian Optimisation',
         long_description = long_description,
         install_requires = required,
-        version = "0.1.0"
+        long_description_content_type = "text/markdown",
+        version = "0.1.0",
+        author = "Alexander I. Cowen-Rivers & Huawei Noah's Ark",
+        license = "MIT",
+        classifiers=[
+            'License :: OSI Approved :: MIT License',
+            'Programming Language :: Python :: 3',
+        ],
+        url = "https://github.com/Yard1/noah-research/tree/master/HEBO",
         )

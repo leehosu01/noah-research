@@ -1,5 +1,7 @@
 ![](hebo.png)
 
+*Note from uploader: This is a fork of the original [project](https://github.com/huawei-noah/noah-research/tree/master/HEBO) with several minor modifications. I have uploaded this package to PyPi in accordance with the MIT License for distribution purposes and do not claim ownership of any work not done by me. I will happily give up control of the package to the original authors should they wish so.* 
+
 # README
 
 Bayesian optimsation library developped by Huawei Noahs Ark Decision Making and Reasoning (DMnR) lab. The <strong> winning submission </strong> to the [NeurIPS 2020 Black-Box Optimisation Challenge](https://bbochallenge.com/leaderboard). 
