@@ -22,4 +22,5 @@ setuptools.setup(
         description = 'Heteroscedastic evolutionary bayesian optimisation',
         long_description = long_description,
         install_requires = required,
+        version = "0.1.0"
         )

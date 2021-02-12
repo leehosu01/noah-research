@@ -8,3 +8,5 @@
 # PARTICULAR PURPOSE. See the MIT License for more details.
 
 from . import abstract_optimizer, bo, hebo, util, general
+
+__version__ = "0.1.0"
