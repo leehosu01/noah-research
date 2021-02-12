@@ -7,11 +7,11 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE. See the MIT License for more details.
 
-import bo
+import hebo
 import torch
 import numpy as p
 
-from bo.acquisitions.acq import GeneralAcq
+from hebo.acquisitions.acq import GeneralAcq
 
 class DummyModel:
     def __init__(self, num_obj, num_constr):

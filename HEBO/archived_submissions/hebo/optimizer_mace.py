@@ -18,10 +18,10 @@ import pandas as pd
 import torch
 from torch.quasirandom import SobolEngine
 from pyDOE2 import lhs
-from bo.design_space.design_space import DesignSpace
-from bo.models.model_factory import get_model
-from bo.acquisitions.acq import LCB, Mean, Sigma, MOMeanSigmaLCB, MACE
-from bo.optimizers.evolution_optimizer import EvolutionOpt
+from hebo.design_space.design_space import DesignSpace
+from hebo.models.model_factory import get_model
+from hebo.acquisitions.acq import LCB, Mean, Sigma, MOMeanSigmaLCB, MACE
+from hebo.optimizers.evolution_optimizer import EvolutionOpt
 
 torch.set_num_threads(min(1, torch.get_num_threads()))
 
