@@ -7,10 +7,10 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE. See the MIT License for more details.
 
-from bo.design_space import DesignSpace
-from bo.models.gp.gp import GP
-from bo.acquisitions.lcb import LCB
-from bo.optimizers import AcqOpt
+from hebo.design_space import DesignSpace
+from hebo.models.gp.gp import GP
+from hebo.acquisitions.lcb import LCB
+from hebo.optimizers import AcqOpt
 
 def f(df_param):
     X, y = load_boston(return_X_y = True)

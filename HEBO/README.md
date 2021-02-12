@@ -23,8 +23,8 @@ python setup.py develop
 ```python
 import pandas as pd
 import numpy  as np
-from bo.design_space.design_space import DesignSpace
-from bo.optimizers.hebo import HEBO
+from hebo.design_space.design_space import DesignSpace
+from hebo.optimizers.hebo import HEBO
 
 def obj(params : pd.DataFrame) -> np.ndarray:
     return ((params.values - 0.37)**2).sum(axis = 1).reshape(-1, 1)
@@ -44,7 +44,7 @@ from sklearn.datasets import load_boston
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error
 
-from bo.sklearn_tuner import sklearn_tuner
+from hebo.sklearn_tuner import sklearn_tuner
 
 space_cfg = [
     {'name' : 'max_depth', 'type' : 'int', 'lb' : 1, 'ub' : 20},
@@ -76,7 +76,7 @@ pytest -v test/ --cov ./bo --cov-report term-missing --cov-config ./test/.covera
 
 - See `archived_submissions/hebo`, which is the exact submission that won the NeurIPS2020 Black-Box Optimsation Challenge.
 - Use `run_local.sh` in [bbo_challenge_starter_kit](https://github.com/rdturnermtl/bbo_challenge_starter_kit/) to reproduce `bayesmark` experiments, you can just drop `archived_submissions/hebo` to the `example_submissions` directory.
-- The `MACEBO` in `bo.optimizers.mace` is the same optimiser, with same hyperparameters but a modified interface (bayesmark dependency removed).
+- The `MACEBO` in `hebo.optimizers.mace` is the same optimiser, with same hyperparameters but a modified interface (bayesmark dependency removed).
 
 
 ## Features
